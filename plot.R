@@ -7,4 +7,5 @@ ggplot(df,aes(x=Date,fill=Party,color=Party)) +
   theme(legend.text=element_text(size=16),axis.title=element_text(size=12)) + 
   scale_y_continuous(limits=c(0,218)) + 
   scale_fill_manual(values=cbPalette) + 
-  scale_color_manual(values=cbPalette)
+  scale_color_manual(values=cbPalette) +
+  theme_bw()
